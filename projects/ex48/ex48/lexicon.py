@@ -17,8 +17,9 @@ def scan(str):
 	for w in str.split():
 		type = None
 
+		w_lower = w.lower()
 		for (t, t_words) in lexicon_of_words:
-			if w in t_words:
+			if w_lower in t_words:
 				type = t
 				break
 

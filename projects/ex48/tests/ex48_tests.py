@@ -8,6 +8,13 @@ def test_directions():
 							('direction', 'south'),
 							('direction', 'east')])
 
+def test_directions_upper_case():
+	assert_equal(lexicon.scan("North"), [('direction', 'North')])
+	result = lexicon.scan("noRth SoUth EAST")
+	assert_equal(result, [('direction', 'noRth'),
+							('direction', 'SoUth'),
+							('direction', 'EAST')])
+
 def test_verbs():
 	assert_equal(lexicon.scan("go"), [('verb', 'go')])
 	result = lexicon.scan("go kill eat")
