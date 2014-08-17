@@ -11,7 +11,7 @@ config = {
 	'author_email': 'mich.sienkiewicz@gmail.com',
 	'version': '0.1',
 	'install_requires': ['nose'],
-	'packages': ['NAME'],
+	'packages': ['ex48'],
 	'scripts': [],
 	'name': 'ex48'
 }
